@@ -2,4 +2,28 @@ xtl-tests
 
 # Testscript output directory (can be symlink).
 #
+*.exe
 test-xtl-tests
+test_xbase64
+test_xbasic_fixed_string
+test_xcomplex
+test_xcomplex_sequence
+test_xclosure
+test_xdynamic_bitset
+test_xfunctional
+test_xhalf_float
+test_xhash
+test_xhierarchy_generator
+test_xiterator_base
+test_xmasked_value
+test_xmeta_utils
+test_xmultimethods
+test_xoptional
+test_xsequence
+test_xtype_traits
+test_xplatform
+test_xproxy_wrapper
+test_xsystem
+test_xvariant
+test_xvisitor
+test_xtl

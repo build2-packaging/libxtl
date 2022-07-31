@@ -11,4 +11,6 @@ depends: * build2 >= 0.15.0
 depends: * bpkg >= 0.15.0
 #depends: libhello ^1.0.0
 
+requires: c++14
+
 tests: libxtl-tests == $
