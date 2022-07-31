@@ -39,21 +39,24 @@ for t : $xtl_tests
 # Compile and link options
 if ($cxx.target.system == 'win32-msvc')
 {
-  cxx.coptions += "/EHsc" "/MP" "/bigobj"
-  cxx.loptions += "/MANIFEST:NO"
+  if($cxx.id == 'msvc')
+  {
+    cxx.coptions += "/EHsc" "/MP" "/bigobj"
+    cxx.loptions += "/MANIFEST:NO"
+  }
+  elif ($cxx.id == 'msvc-clang' || $cxx.id == 'clang')
+    cxx.coptions += -fms-compatibility
 }
-elif ($cxx.id == 'msvc-clang')
-  cxx.coptions += -fms-compatibility
   
 
 if($config.libxtl_tests.disable_exceptions)
 {
-  if($cxx.target.system == 'win32-msvc')
+  if($cxx.target.system == 'win32-msvc' && $cxx.id == 'msvc')
     cxx.coptions += "/EHs-c-"
   else
     cxx.coptions += -fno-exceptions
 }
 
-if($cxx.target.system != 'windows')
+if($cxx.target.system != 'win32-msvc')
   cxx.libs += -pthread
 
