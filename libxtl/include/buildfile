@@ -20,6 +20,6 @@ lib{xtl}:
 #
 hxx{*}:
 {
-  install         = include/xtl/
+  install         = include/
   install.subdirs = true
 }
