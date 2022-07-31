@@ -1,6 +1,7 @@
 : 1
 name: libxtl
 version: 0.7.4-a.0.z
+project: libxtl
 summary: Build2 package for xtl - basic tools (containers, algorithms) used by other quantstack packages
 license: BSD-3-Clause
 description-file: README.md

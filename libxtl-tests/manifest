@@ -1,6 +1,7 @@
 : 1
 name: libxtl-tests
 version: 0.7.4-a.0.z
+project: libxtl
 summary: Build2 package for xtl-tests
 license: BSD-3-Clause
 description-file: README.md
