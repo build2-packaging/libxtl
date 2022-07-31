@@ -1,0 +1,14 @@
+: 1
+name: libxtl
+version: 0.7.4-a.0.z
+summary: Build2 package for xtl - basic tools (containers, algorithms) used by other quantstack packages
+license: BSD-3-Clause
+description-file: README.md
+url: https://github.com/xtensor-stack/xtl
+email: swat.somebug@gmail.com
+#build-error-email: swat.somebug@gmail.com
+depends: * build2 >= 0.15.0
+depends: * bpkg >= 0.15.0
+#depends: libhello ^1.0.0
+
+tests: libxtl-tests == $

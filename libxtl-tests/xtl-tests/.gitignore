@@ -1,0 +1,5 @@
+xtl-tests
+
+# Testscript output directory (can be symlink).
+#
+test-xtl-tests
