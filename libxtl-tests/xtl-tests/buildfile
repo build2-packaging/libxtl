@@ -5,6 +5,7 @@ import libs += doctest%lib{doctest}
 
 xtl_tests = test_xbase64 \
             test_xbasic_fixed_string \
+            test_xcompare \
             test_xcomplex \
             test_xcomplex_sequence \
             test_xclosure \
@@ -23,7 +24,6 @@ xtl_tests = test_xbase64 \
             test_xplatform \
             test_xproxy_wrapper \
             test_xsystem \
-            test_xvariant \
             test_xvisitor
 
 cxx.poptions =+ "-I$out_root" "-I$src_root"
@@ -47,7 +47,7 @@ if ($cxx.target.system == 'win32-msvc')
   elif ($cxx.id == 'msvc-clang' || $cxx.id == 'clang')
     cxx.coptions += -fms-compatibility
 }
-  
+
 
 if($config.libxtl_tests.disable_exceptions)
 {
