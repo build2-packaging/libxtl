@@ -1,0 +1,7 @@
+: 1
+name: libxtl
+version: 0.8.0
+project: libxtl
+summary: Build2 package for xtl - basic tools (containers, algorithms) used\
+ by other quantstack packages
+license: BSD-3-Clause
